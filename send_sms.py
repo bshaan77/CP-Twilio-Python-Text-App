@@ -10,7 +10,7 @@ from twilio.rest import Client
 #auth_token = os.environ['TWILIO_AUTH_TOKEN']
 client = Client(account_sid, auth_token)
 
-my_msg = "Hey"
+my_msg = "Your workout has now ended. You have burned a total of 120 calories. You can check your full results on your dashboard. Including workout graphs, and calories information."
 message = client.messages.create(to=my_cell, from_=my_twilio,body=my_msg)
 
 def startSMS (name):
